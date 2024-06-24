@@ -1,16 +1,16 @@
 
 
-.button-login{
+.button-signup{
     color:black;
     border-radius:black;
     background-color:blue;
 
 }
-.button-login:hover{
+.button-signup:hover{
     opacity:1;
     color:black;
 }
-.button-login:active{
+.button-signup:active{
     background-color:red;
 }
 .navbar-nav{
