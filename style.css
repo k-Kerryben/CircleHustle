@@ -131,3 +131,26 @@ h1{
     position: relative;
     z-index: 2;
 }
+.password-container {
+    position: relative;
+    width: 250px;
+}
+.password-container input {
+    width: 100%;
+    padding-right: 30px;
+}
+.password-container .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.input-group-text {
+    cursor: pointer;
+}
