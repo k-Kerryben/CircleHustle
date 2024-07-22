@@ -1,0 +1,42 @@
+.bg-img {
+    
+    background-image: url('img/key.jpg'); 
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Add the overlay */
+    position: relative;
+}
+
+.bg-overlay {
+    /* Black background with transparency */
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center the overlay */
+    display: flex;
+    justify-content: center;
+}
+.contentT{
+    color: white;
+    margin: 50px;
+}
+.password-container {
+    position: relative;
+    width: 250px;
+}
+.password-container input {
+    width: 100%;
+    padding-right: 30px;
+}
+.password-container .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(15%);
+    cursor: pointer;
+}

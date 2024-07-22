@@ -1,8 +1,7 @@
 body{
-    background-image:
-    url('img/about.jpg');
-    background-attachment:fixed ;
-    background-size:cover;
+    background-image: url('img/key.jpg');
+    background-attachment:fixed ; 
+     background-size: cover;
 }
 .firstname,.lastname,.email,.password,.text{
     display:block;
@@ -22,9 +21,42 @@ body{
     position: relative;
 }
 a {
-    text-decoration: none;
     color: whitesmoke;
 }
 a:hover{
     color: rgb(236, 236, 236);
+}
+
+
+.bg-imgs {
+    /* The image used */
+   /* background-image: url('img/key.jpg'); /* Update the path to your image */
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Add the overlay */
+    position: relative;
+}
+
+.bg-overlays {
+    /* Black background with transparency */
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center the overlay */
+    display: flex;
+    justify-content: center;
+}
+.contentTs {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
