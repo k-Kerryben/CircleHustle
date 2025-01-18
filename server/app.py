@@ -15,7 +15,7 @@ from models import db
 app = Flask(__name__)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///circlehustle.db' 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:admin@localhost:5433/circlehustle' 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['JWT_SECRET_KEY'] = 'your_jwt_secret_key'  
 
@@ -34,6 +34,9 @@ scheduler.start()
 
 @app.route('/signup', methods=['POST'])
 def signup():
+    if not request.is_json:
+        return jsonify({'message': 'Request must be JSON'}), 400
+    
     data = request.get_json()
     username = data.get('username')
     password = data.get('password')
