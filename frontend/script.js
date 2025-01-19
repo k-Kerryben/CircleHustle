@@ -7,7 +7,7 @@ const email = document.getElementById("exampleInputEmail1");
 const password = document.getElementById("exampleInputPassword");
 const confirmPassword = document.getElementById("exampleInputPassword1");
 const errors = document.getElementsByClassName("error")[0]
-
+const paymentForm = document.getElementsByClassName("payment-form")
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const firstNameValue = firstName.value.trim();
@@ -41,4 +41,18 @@ form.addEventListener("submit", (e) => {
         alert("Form submitted successfully")
     }
 });
+
+paymentForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const phoneNumber = document.getElementById("phone-number").value.trim()
+    window.location.href = '/dashboard'
+    console.log("submited")
+})
+
+
+
+
+
+
+
 

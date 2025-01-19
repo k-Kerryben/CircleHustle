@@ -10,29 +10,23 @@
 <body>
     <div class="container mt-5">
         <h2 class="mb-4">Payment Form</h2>
-        <form>
+        <form class="payment-form">
             <div class="mb-3">
-                <label for="paymentType" class="form-label">Payment Type</label>
-                <select class="form-select" id="paymentType" onchange="showPaymentDetails()">
-                    <option value="" selected>Select a payment option</option>
-                    <option value="creditCard">Credit Card</option>
-                    <option value="debitCard">Debit Card</option>
-                    <option value="paypal">PayPal</option>
-                    <option value="bank">Bank Transfer</option>
-                    <option value="mpesa">M-Pesa</option>
-                </select>
+            <label for="paymentType" class="form-label">Payment Type</label>
+            <input type="text" class="form-control" id="selectedPayment"  value="Mpesa" readonly>
             </div>
-            <div class="mb-3" id="bankDetails" style="display: none;">
-                <label for="bankAccount" class="form-label">Bank Account</label>
-                <input type="text" class="form-control" id="bankAccount" value="1234567890" readonly>
-            </div>
+
             <div class="mb-3" id="mpesaDetails" style="display: none;">
                 <label for="tillNumber" class="form-label">Till Number</label>
                 <input type="text" class="form-control" id="tillNumber" value="9876543210" readonly>
             </div>
             <div class="mb-3">
                 <label for="selectedPayment" class="form-label">Selected Payment</label>
-                <input type="text" class="form-control" id="selectedPayment" readonly>
+                <input type="text" class="form-control" id="selectedPayment"  value="Mpesa" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="selectedPayment" class="form-label">Enter Phone number</label>
+                <input type="tel" class="form-control" id="phone-number" >
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

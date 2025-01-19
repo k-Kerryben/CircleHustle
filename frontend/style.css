@@ -77,7 +77,7 @@ h1 {
 .paragraph {
   text-align: center;
 }
-.bg-imga {
+.bg-imga{
   /* The image used */
   background-image: url("img/key.jpg"); /* Update the path to your image */
 
@@ -93,7 +93,7 @@ h1 {
   position: relative;
 }
 
-.bg-overlaya {
+.bg-overlaya{
   /* Black background with transparency */
   background-color: rgba(0, 0, 0, 0.5);
 
@@ -105,7 +105,7 @@ h1 {
   justify-content: center;
 }
 
-.contenta {
+.contenta{
   color: white;
 }
 
@@ -138,4 +138,86 @@ footer {
 }
 .input-group-text {
   cursor: pointer;
+}
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-details {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.summary-boards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.board {
+  flex: 1;
+  margin: 0 10px;
+  background-color: #4618c5;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.board h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.board p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.transactions h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background-color:#4618c5;
+  color: #fff;
+  border-top-left-radius: 7px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
