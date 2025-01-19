@@ -1,7 +1,10 @@
 body{
-    background-image: url('img/key.jpg');
+    background-image: url('./img/key.jpg');
     background-attachment:fixed ; 
      background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 .firstname,.lastname,.email,.password,.text{
     display:block;
@@ -45,18 +48,27 @@ a:hover{
 }
 
 .bg-overlays {
-    /* Black background with transparency */
+    width: 400px;
+    height: 600px;
+
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
 
     /* Full height */
-    height: 100%;
 
     /* Center the overlay */
-    display: flex;
-    justify-content: center;
+
 }
 .contentTs {
     color: white;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.signup-form{
+    width: 100%;
+    height: 100%;
+}
+.password, .btn-primary{
+    width: 100%;
 }
