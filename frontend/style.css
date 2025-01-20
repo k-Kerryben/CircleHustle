@@ -221,3 +221,7 @@ th, td {
 tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+.error{
+  color: red;
+  text-decoration: none;
+}
